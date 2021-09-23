@@ -234,8 +234,6 @@ Wire Wire Line
 Wire Wire Line
 	2850 4800 3150 4800
 Connection ~ 3150 4800
-Text GLabel 7300 3500 2    50   Input ~ 0
-PWM
 Wire Wire Line
 	5750 2650 7000 2650
 Wire Wire Line
@@ -251,22 +249,14 @@ Wire Wire Line
 	6250 3050 5850 3050
 Wire Wire Line
 	6250 3500 7300 3500
-Text GLabel 7300 3700 2    50   Input ~ 0
-OPA
 Connection ~ 7000 3700
-Text GLabel 6600 3900 2    50   Input ~ 0
-OPB
 Wire Wire Line
 	6600 3900 6450 3900
 Connection ~ 6450 3900
 Wire Wire Line
 	7000 3700 7300 3700
-Text GLabel 7300 3300 2    50   Input ~ 0
-VREF
 Wire Wire Line
 	7000 3300 7300 3300
-Text GLabel 4850 3450 2    50   Input ~ 0
-VREF
 Wire Wire Line
 	4850 3450 4800 3450
 Wire Wire Line
@@ -323,10 +313,6 @@ Wire Wire Line
 	4600 4800 4800 4800
 Wire Wire Line
 	4450 4350 4450 4000
-Text GLabel 7300 2650 2    50   Input ~ 0
-Vcc
-Wire Wire Line
-	7300 2650 7000 2650
 Connection ~ 7000 2650
 NoConn ~ 5250 3900
 NoConn ~ 5250 3800
@@ -359,26 +345,6 @@ Wire Wire Line
 	6250 2950 6250 3050
 Wire Wire Line
 	6350 2950 6250 2950
-Wire Wire Line
-	8250 4150 8400 4150
-Wire Wire Line
-	8250 4250 8400 4250
-Wire Wire Line
-	8250 4350 8400 4350
-Wire Wire Line
-	8250 4450 8400 4450
-Text GLabel 8250 4450 0    50   Input ~ 0
-GND
-Text GLabel 8250 4700 0    50   Input ~ 0
-GND
-Text GLabel 8250 4250 0    50   Input ~ 0
-PWM
-Text GLabel 8250 4350 0    50   Input ~ 0
-OPB
-Text GLabel 8250 4150 0    50   Input ~ 0
-OPA
-Text GLabel 8300 3900 0    50   Input ~ 0
-Vcc
 $Comp
 L power:PWR_FLAG #FLG02
 U 1 1 61421496
@@ -444,14 +410,12 @@ Text Notes 3650 3300 0    79   ~ 0
 DUTY
 Wire Wire Line
 	8200 4050 8350 4050
-Wire Wire Line
-	8200 4550 8300 4550
 $Comp
 L power:GND #PWR03
 U 1 1 61482067
 P 8400 4600
 F 0 "#PWR03" H 8400 4350 50  0001 C CNN
-F 1 "GND" H 8405 4427 50  0000 C CNN
+F 1 "GND" H 8400 4450 50  0000 C CNN
 F 2 "" H 8400 4600 50  0001 C CNN
 F 3 "" H 8400 4600 50  0001 C CNN
 	1    8400 4600
@@ -460,15 +424,6 @@ $EndComp
 Wire Wire Line
 	8400 4600 8400 4550
 Connection ~ 8400 4550
-Wire Wire Line
-	8250 4700 8300 4700
-Wire Wire Line
-	8300 4700 8300 4550
-Connection ~ 8300 4550
-Wire Wire Line
-	8300 4550 8400 4550
-Wire Wire Line
-	8300 3900 8350 3900
 Wire Wire Line
 	8350 3900 8350 4050
 Connection ~ 8350 4050
@@ -549,6 +504,56 @@ F 1 "Fiducial" H 8735 3055 50  0000 L CNN
 F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 8650 3100 50  0001 C CNN
 F 3 "~" H 8650 3100 50  0001 C CNN
 	1    8650 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0101
+U 1 1 614C3DD8
+P 7000 2550
+F 0 "#PWR0101" H 7000 2400 50  0001 C CNN
+F 1 "VCC" H 7015 2723 50  0000 C CNN
+F 2 "" H 7000 2550 50  0001 C CNN
+F 3 "" H 7000 2550 50  0001 C CNN
+	1    7000 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2550 7000 2650
+Wire Wire Line
+	8200 4550 8400 4550
+Wire Wire Line
+	8400 4450 8400 4550
+Text Label 8300 4350 2    50   ~ 0
+OPB
+Text Label 8300 4250 2    50   ~ 0
+PWM
+Text Label 8300 4150 2    50   ~ 0
+OPA
+Wire Wire Line
+	8400 4150 8300 4150
+Wire Wire Line
+	8400 4250 8300 4250
+Wire Wire Line
+	8400 4350 8300 4350
+Text Label 7300 3700 0    50   ~ 0
+OPA
+Text Label 7300 3500 0    50   ~ 0
+PWM
+Text Label 6600 3900 0    50   ~ 0
+OPB
+Text Label 7300 3300 0    50   ~ 0
+VREF
+Text Label 4850 3450 0    50   ~ 0
+VREF
+$Comp
+L power:VCC #PWR0102
+U 1 1 614E8B62
+P 8350 3900
+F 0 "#PWR0102" H 8350 3750 50  0001 C CNN
+F 1 "VCC" H 8365 4073 50  0000 C CNN
+F 2 "" H 8350 3900 50  0001 C CNN
+F 3 "" H 8350 3900 50  0001 C CNN
+	1    8350 3900
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
