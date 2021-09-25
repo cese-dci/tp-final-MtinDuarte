@@ -112,6 +112,7 @@ F 0 "U1" H 5900 3350 50  0000 C CNN
 F 1 "SG3525" H 6000 3250 50  0000 C CNN
 F 2 "Package_SO:SOP-16_4.4x10.4mm_P1.27mm" H 5750 3800 50  0001 C CNN
 F 3 "www.st.com/resource/en/datasheet/sg3525.pdf" H 5750 3800 50  0001 C CNN
+F 4 "SG3525AP013TR" H 5750 3800 50  0001 C CNN "Manufacture Part"
 	1    5750 3800
 	1    0    0    -1  
 $EndComp
@@ -220,7 +221,8 @@ F 0 "C1" H 2850 4250 50  0000 L CNN
 F 1 "10uF" H 2850 4050 50  0000 L CNN
 F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-10_AVX-L" H 2888 4000 50  0001 C CNN
 F 3 "https://www.digikey.com/en/products/detail/vishay-sprague/T95V155K035HSSL/2808151" H 2850 4150 50  0001 C CNN
-F 4 "T95V155K035HSSL" H 2850 4150 50  0001 C CNN "Manufacture Product Number"
+F 4 "" H 2850 4150 50  0001 C CNN "Manufacture Product Number"
+F 5 "T95V155K035HSSL" H 2850 4150 50  0001 C CNN "Manufacture Part"
 	1    2850 4150
 	1    0    0    -1  
 $EndComp
